@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Mobile Testing suite">
+    <test name="Mobile Testing suite">
+        <classes>
+            <class name="testpages.Createaccounttest"/>
+            <class name="testpages.searchitemtest"/>
+        </classes>
+    </test>
+</suite>
