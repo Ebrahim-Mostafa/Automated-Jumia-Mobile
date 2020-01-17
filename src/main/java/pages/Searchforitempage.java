@@ -16,12 +16,15 @@ public class Searchforitempage extends BaseTest {
     @FindBy(id = "com.jumia.android:id/add_to_cart_button")
     WebElement add_to_cart_btn;
 
+    @FindBy(xpath = "//android.widget.TextView[@text='Samsung Galaxy A70 - 6.7-inch 128GB/6GB Dual SIM 4G Mobile Phone - White']")
+    WebElement product;
+
     public void searchitem(String item) {
         wait.until(ExpectedConditions.elementToBeClickable(search_txt));
         search_txt.click();
         search_txt.clear();
         search_txt.sendKeys(item);
-        search_txt.submit();
+        wait.until(ExpectedConditions.elementToBeClickable(product)).click();
     }
 
     public void addtocart() {

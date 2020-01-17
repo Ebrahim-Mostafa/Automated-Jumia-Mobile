@@ -37,6 +37,9 @@ public class Createaccountpage extends BaseTest {
     @FindBy(xpath = "//android.widget.EditText[@content-desc=\"last_name\"]")
     WebElement lastname;
 
+    @FindBy(xpath = "//android.widget.RadioButton[@text='Male']")
+    WebElement radio_btn;
+
     @FindBy(xpath = "//android.widget.EditText[@content-desc=\"email\"]")
     WebElement email;
 
@@ -52,6 +55,9 @@ public class Createaccountpage extends BaseTest {
     @FindBy(id = "com.jumia.android:id/login_button_continue")
     WebElement create_btn;
 
+    @FindBy(id = "com.jumia.android:id/navigation_home")
+    WebElement home_btn;
+
     public void selectcountry() {
         wait.until(ExpectedConditions.elementToBeClickable(Country)).click();
     }
@@ -63,24 +69,23 @@ public class Createaccountpage extends BaseTest {
 
     public void clickonaccount() {
         wait.until(ExpectedConditions.elementToBeClickable(Account)).click();
-        //   Account.click;
+        BaseTest.Scroll();
     }
 
     public void clickonlogin() {
-        BaseTest.Scroll();
-//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", login);
+
         wait.until(ExpectedConditions.elementToBeClickable(login)).click();
     }
 
     public void createaccount(String FirstName, String LastName, String Email, String pass, String phone) {
         wait.until(ExpectedConditions.elementToBeClickable(createaccount)).click();
-//        createaccount.click();
         firstname.click();
         firstname.clear();
         firstname.sendKeys(FirstName);
         lastname.click();
         lastname.clear();
         lastname.sendKeys(LastName);
+        radio_btn.click();
         email.click();
         email.clear();
         email.sendKeys(Email);
@@ -92,7 +97,8 @@ public class Createaccountpage extends BaseTest {
         mobile.sendKeys(phone);
         checkbox.click();
         BaseTest.Scroll();
-//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", create_btn);
         create_btn.click();
+        wait.until(ExpectedConditions.elementToBeClickable(home_btn)).click();
+
     }
 }

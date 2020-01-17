@@ -9,6 +9,7 @@ import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import java.net.MalformedURLException;
@@ -55,8 +56,6 @@ public class BaseTest {
         //   driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
 //        driver.manage().timeouts().pageLo1adTimeout(20, TimeUnit.SECONDS);
 //        driver.manage().timeouts().setScriptTimeout(50, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 50);
     }
 
     public static void Scroll()
@@ -70,6 +69,12 @@ public class BaseTest {
         TouchAction touchAction = new TouchAction(BaseTest.driver);
         touchAction.press(PointOption.point(pressX, bottomY * 4 / 5)).waitAction()
                 .moveTo(PointOption.point(pressX, topY * 40 / 100)).release().perform();
+    }
+
+    @BeforeMethod
+    public void projectwaits(){
+        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver, 50);
     }
 
     @AfterTest
