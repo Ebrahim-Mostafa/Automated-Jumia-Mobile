@@ -1,12 +1,15 @@
 package pages;
 
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Searchforitempage extends BaseTest {
-    public Searchforitempage() {
+
+    public Searchforitempage(AppiumDriver<?> driver) {
+        this.driver=driver;
         PageFactory.initElements(driver, this);
     }
 
@@ -18,6 +21,7 @@ public class Searchforitempage extends BaseTest {
 
     @FindBy(xpath = "//android.widget.TextView[@text='Samsung Galaxy A70 - 6.7-inch 128GB/6GB Dual SIM 4G Mobile Phone - White']")
     WebElement product;
+
 
     public void searchitem(String item) {
         wait.until(ExpectedConditions.elementToBeClickable(search_txt));

@@ -17,13 +17,12 @@ public class Createaccounttest extends BaseTest {
 
     @Test(dataProvider = "datareader")
     public void usercancreateaccount(String FirstName, String LastName, String Email, String pass, String phone) {
-        accpage = new Createaccountpage();
+        accpage = new Createaccountpage(driver);
         accpage.selectcountry();
         accpage.selectlanguage();
         accpage.clickonaccount();
         accpage.clickonlogin();
         accpage.createaccount(FirstName, LastName, Email, pass, phone);
     }
-
 }
 

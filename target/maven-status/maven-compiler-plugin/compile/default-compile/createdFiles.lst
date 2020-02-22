@@ -1,1 +1,3 @@
-Pages\BaseTest.class
+pages\Searchforitempage.class
+pages\BaseTest.class
+pages\Createaccountpage.class

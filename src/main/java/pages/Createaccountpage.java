@@ -1,18 +1,15 @@
 package pages;
 
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.touch.offset.PointOption;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Createaccountpage extends BaseTest {
 
-    public Createaccountpage() {
+    public Createaccountpage(AppiumDriver<?> driver) {
+        this.driver=driver;
         PageFactory.initElements(driver, this);
     }
 
@@ -21,7 +18,6 @@ public class Createaccountpage extends BaseTest {
 
     @FindBy(xpath = "//android.widget.TextView[@text='English']")
     WebElement language;
-
     @FindBy(id = "com.jumia.android:id/navigation_account")
     WebElement Account;
 
@@ -58,8 +54,10 @@ public class Createaccountpage extends BaseTest {
     @FindBy(id = "com.jumia.android:id/navigation_home")
     WebElement home_btn;
 
+
     public void selectcountry() {
         wait.until(ExpectedConditions.elementToBeClickable(Country)).click();
+        //  Country.click();
     }
 
     public void selectlanguage() {
@@ -72,10 +70,7 @@ public class Createaccountpage extends BaseTest {
         BaseTest.Scroll();
     }
 
-    public void clickonlogin() {
-
-        wait.until(ExpectedConditions.elementToBeClickable(login)).click();
-    }
+    public void clickonlogin() { wait.until(ExpectedConditions.elementToBeClickable(login)).click(); }
 
     public void createaccount(String FirstName, String LastName, String Email, String pass, String phone) {
         wait.until(ExpectedConditions.elementToBeClickable(createaccount)).click();

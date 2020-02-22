@@ -7,7 +7,6 @@ import pages.BaseTest;
 import pages.Searchforitempage;
 
 public class searchitemtest extends BaseTest {
-    public static Searchforitempage sfip;
 
     @DataProvider(name = "readata")
     public Object[][] userdata() {
@@ -17,7 +16,7 @@ public class searchitemtest extends BaseTest {
 
     @Test(dataProvider = "readata")
     public void usercansearch(String item, String price) {
-        sfip = new Searchforitempage();
+        Searchforitempage sfip = new Searchforitempage(driver);
         sfip.searchitem(item);
         sfip.addtocart();
 
