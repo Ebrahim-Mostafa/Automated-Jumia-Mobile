@@ -11,6 +11,9 @@
     <option name="hideInfoMessages" value="true" />
     <option name="HIDE_INFO_MESSAGES" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Automated-Jumia-Mobile" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -42,7 +45,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Automated-jumia-Web" />
+    <property name="last_opened_file_path" value="$USER_HOME$/eclipse-workspace/MiVodafone_Spain_Framework" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -113,10 +116,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="445" y="235" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1579434048329" />
-    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1582406559658">
+    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1583263133245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582406559658" />
+    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583263133245" />
     <state x="521" y="282" width="347" height="163" key="Github.CreateGistDialog" timestamp="1582406149245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -129,22 +132,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="520" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1582406104672" />
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom" timestamp="1580601257047">
+    <state width="1323" height="204" key="GridCell.Tab.0.bottom" timestamp="1582412206386">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580601257047" />
-    <state width="1323" height="204" key="GridCell.Tab.0.center" timestamp="1580601257047">
+    <state width="1323" height="204" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582412206386" />
+    <state width="1323" height="204" key="GridCell.Tab.0.center" timestamp="1582412206385">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580601257047" />
-    <state width="1323" height="204" key="GridCell.Tab.0.left" timestamp="1580601257046">
+    <state width="1323" height="204" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582412206385" />
+    <state width="1323" height="204" key="GridCell.Tab.0.left" timestamp="1582412206385">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580601257046" />
-    <state width="1323" height="204" key="GridCell.Tab.0.right" timestamp="1580601257047">
+    <state width="1323" height="204" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582412206384" />
+    <state width="1323" height="204" key="GridCell.Tab.0.right" timestamp="1582412206385">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580601257047" />
+    <state width="1323" height="204" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582412206385" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1579557257935">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -181,10 +184,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1579299459354" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1579960536481">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583262979775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579960536481" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583262979775" />
     <state x="494" y="284" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582406693067">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
